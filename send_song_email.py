@@ -1,9 +1,10 @@
+import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-SENDER_EMAIL = "your_email@gmail.com"
-SENDER_PASSWORD = "your_app_password"  # Use a Gmail App Password
+SENDER_EMAIL = os.environ["SENDER_EMAIL"]
+SENDER_PASSWORD = os.environ["SENDER_PASSWORD"]
 
 RECIPIENTS = [
     "jayshuet@gmail.com",
@@ -43,7 +44,8 @@ def build_message(recipient: str) -> MIMEMultipart:
 
 
 def send_emails():
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+    with smtplib.SMTP("smtp.office365.com", 587) as server:
+        server.starttls()
         server.login(SENDER_EMAIL, SENDER_PASSWORD)
         for recipient in RECIPIENTS:
             msg = build_message(recipient)

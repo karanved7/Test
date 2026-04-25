@@ -1,0 +1,171 @@
+import random
+
+RECIPES = [
+    {
+        "name": "Veggie Stir Fry with Rice",
+        "cost": "$2.50",
+        "calories": 420,
+        "time": "20 mins",
+        "ingredients": [
+            "1 cup brown rice",
+            "1 bell pepper",
+            "1 cup broccoli",
+            "2 cloves garlic",
+            "2 tbsp soy sauce",
+            "1 tbsp olive oil",
+        ],
+        "steps": [
+            "Cook rice according to package.",
+            "Heat oil in a pan over medium-high heat.",
+            "Add garlic, stir 1 min.",
+            "Add veggies, stir fry 5-7 mins.",
+            "Add soy sauce, toss and serve over rice.",
+        ],
+    },
+    {
+        "name": "Lentil Soup",
+        "cost": "$1.80",
+        "calories": 380,
+        "time": "30 mins",
+        "ingredients": [
+            "1 cup red lentils",
+            "1 onion, diced",
+            "2 carrots, chopped",
+            "2 cloves garlic",
+            "1 tsp cumin",
+            "4 cups vegetable broth",
+        ],
+        "steps": [
+            "Sauté onion and garlic 3 mins.",
+            "Add carrots and cumin, cook 2 mins.",
+            "Add lentils and broth, bring to boil.",
+            "Simmer 20 mins until lentils are soft.",
+            "Season with salt and pepper.",
+        ],
+    },
+    {
+        "name": "Egg & Veggie Scramble",
+        "cost": "$1.50",
+        "calories": 310,
+        "time": "15 mins",
+        "ingredients": [
+            "3 eggs",
+            "1/2 cup spinach",
+            "1/4 onion, diced",
+            "1/2 tomato, chopped",
+            "Salt and pepper",
+            "1 tsp olive oil",
+        ],
+        "steps": [
+            "Heat oil in a pan over medium heat.",
+            "Sauté onion 2 mins.",
+            "Add spinach and tomato, cook 2 mins.",
+            "Beat eggs, pour in and scramble until set.",
+            "Season and serve.",
+        ],
+    },
+    {
+        "name": "Black Bean Tacos",
+        "cost": "$2.00",
+        "calories": 450,
+        "time": "15 mins",
+        "ingredients": [
+            "1 can black beans, drained",
+            "4 small tortillas",
+            "1 tsp cumin",
+            "1/2 tsp chili powder",
+            "1/2 cup salsa",
+            "Shredded cabbage",
+        ],
+        "steps": [
+            "Heat beans in a pan with cumin and chili powder.",
+            "Warm tortillas in a dry pan 30 secs each side.",
+            "Fill tortillas with beans, cabbage, and salsa.",
+            "Serve immediately.",
+        ],
+    },
+    {
+        "name": "Oats & Banana Bowl",
+        "cost": "$0.80",
+        "calories": 340,
+        "time": "10 mins",
+        "ingredients": [
+            "1 cup rolled oats",
+            "2 cups water or milk",
+            "1 banana, sliced",
+            "1 tbsp peanut butter",
+            "1 tsp honey",
+            "Pinch of cinnamon",
+        ],
+        "steps": [
+            "Boil oats in water/milk 5 mins, stirring often.",
+            "Pour into bowl.",
+            "Top with banana slices and peanut butter.",
+            "Drizzle honey and sprinkle cinnamon.",
+        ],
+    },
+    {
+        "name": "Chickpea & Tomato Curry",
+        "cost": "$2.20",
+        "calories": 410,
+        "time": "25 mins",
+        "ingredients": [
+            "1 can chickpeas, drained",
+            "1 can diced tomatoes",
+            "1 onion, diced",
+            "2 cloves garlic",
+            "1 tsp curry powder",
+            "1/2 cup rice",
+        ],
+        "steps": [
+            "Cook rice separately.",
+            "Sauté onion and garlic 3 mins.",
+            "Add curry powder, stir 1 min.",
+            "Add chickpeas and tomatoes, simmer 15 mins.",
+            "Serve over rice.",
+        ],
+    },
+    {
+        "name": "Peanut Butter Banana Toast",
+        "cost": "$0.70",
+        "calories": 290,
+        "time": "5 mins",
+        "ingredients": [
+            "2 slices whole wheat bread",
+            "2 tbsp peanut butter",
+            "1 banana, sliced",
+            "1 tsp honey",
+        ],
+        "steps": [
+            "Toast bread to your liking.",
+            "Spread peanut butter on each slice.",
+            "Top with banana slices.",
+            "Drizzle with honey.",
+        ],
+    },
+    {
+        "name": "Tuna & Veggie Rice Bowl",
+        "cost": "$2.30",
+        "calories": 390,
+        "time": "20 mins",
+        "ingredients": [
+            "1 can tuna, drained",
+            "1 cup cooked rice",
+            "1/2 cucumber, diced",
+            "1/2 avocado, sliced",
+            "1 tbsp soy sauce",
+            "Lemon juice",
+        ],
+        "steps": [
+            "Cook rice and let cool slightly.",
+            "Place rice in bowl.",
+            "Top with tuna, cucumber, and avocado.",
+            "Drizzle soy sauce and lemon juice.",
+        ],
+    },
+]
+
+
+def get_daily_meals():
+    meals = random.sample(RECIPES, 2)
+    return meals[0], meals[1]

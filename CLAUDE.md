@@ -5,8 +5,8 @@ This file documents the repository structure, conventions, and workflows for AI 
 ## Repository Overview
 
 - **Repo**: `karanved7/Test` on GitHub
-- **State**: Newly initialized — currently contains only a `README.md`
-- **Purpose**: Test / sandbox repository
+- **Language**: Python 3.11
+- **Purpose**: General-purpose CLI toolkit (`toolkit` command)
 
 ## Branch Strategy
 
@@ -51,11 +51,42 @@ docs: document branch strategy in CLAUDE.md
 
 ```
 /
-├── README.md       # Project overview (currently placeholder)
-└── CLAUDE.md       # This file — AI assistant guidance
+├── cli/
+│   ├── __init__.py
+│   ├── __main__.py        # enables `python -m cli`
+│   ├── main.py            # Click group, wires subcommands
+│   └── commands/
+│       ├── __init__.py
+│       ├── files.py       # `files stats` and `files search`
+│       └── text.py        # `text count` and `text transform`
+├── tests/
+│   ├── test_files.py
+│   └── test_text.py
+├── pyproject.toml         # build config, entry point, pytest config
+├── requirements.txt       # click, pytest
+├── README.md
+└── CLAUDE.md
 ```
 
-As the project grows, update this section to reflect the actual directory layout.
+## Running the Project
+
+```bash
+# Install (once)
+pip install -e .
+
+# Run
+toolkit --help
+toolkit files stats .
+toolkit files search "TODO" . --include "*.py"
+toolkit text count README.md
+toolkit text transform --slug "Hello World"
+
+# Without installing
+python -m cli --help
+
+# Tests
+python -m pytest tests/ -v
+```
 
 ## Development Conventions
 

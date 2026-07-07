@@ -1,0 +1,1102 @@
+{
+  "alerted": {
+    "63MOONS|12-Aug-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ACE|7-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ADANIGREEN|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ADANIPORTS|27-Sep-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ADANIPORTS|9-Sep-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ADANIPOWER|6-May-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "AEGISLOG|24-May-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "AJMERA|1-Oct-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "AJMERA|12-Nov-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ALEMBICLTD|23-Aug-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ALICON|25-Feb-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ALLCARGO|14-Dec-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ALLCARGO|7-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ANANTRAJ|24-Sep-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ANANTRAJ|25-Aug-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ANDHRAPAP|28-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ANDHRSUGAR|25-Dec-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ANGELONE|14-Aug-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ANGELONE|16-May-2026|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ANGELONE|8-Dec-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ANURAS|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "APTECHT|11-Feb-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ARVSMART|1-Jul-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ARVSMART|26-Dec-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ASAHIINDIA|13-Aug-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ASHIANA|13-May-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ASTERDM|3-Sep-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ATGL|29-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "AURIONPRO|19-Aug-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "AURIONPRO|28-Jul-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "AVALON|21-Dec-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "AVANTEL|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "AVTNPL|22-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "AVTNPL|27-Nov-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BAJAJ-AUTO|11-Mar-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BANCOINDIA|26-May-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BANKBARODA|21-Dec-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BBOX|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BCLIND|20-Feb-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BEML|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BEPL|10-Aug-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BESTAGRO|18-Sep-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BESTAGRO|6-Feb-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BFINVEST|24-Sep-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BFUTILITIE|28-Apr-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BFUTILITIE|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BFUTILITIE|5-Oct-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BHEL|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BHEL|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BIGBLOC|22-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BLISSGVS|26-Jun-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BLS|4-Jun-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BLUESTARCO|22-Feb-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BLUESTARCO|8-Dec-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "BOMDYEING|2-Nov-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "CEATLTD|23-Jun-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "CGCL|2-Jan-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "CHENNPETRO|6-Jun-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "CHENNPETRO|9-Sep-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "CONFIPET|26-Dec-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "CONFIPET|5-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "CROMPTON|28-Nov-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "CUPID|29-Jun-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "CYIENT|17-Dec-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "DALMIASUG|24-Jul-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "DBCORP|25-May-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "DBL|13-Nov-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "DBREALTY|17-May-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "DISHTV|10-Oct-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "DREDGECORP|4-Dec-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "DWARKESH|22-Apr-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "DYNAMATECH|3-Oct-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "E2E|27-Jul-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "EASEMYTRIP|7-Aug-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "EIHAHOTELS|20-Jun-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ELECON|10-Jun-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ENDURANCE|9-May-2026|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "EXPLEOSOL|13-Apr-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "FCL|24-Sep-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "FEDERALBNK|3-Feb-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "FEDERALBNK|5-Mar-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "FILATEX|17-Jul-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "FORTIS|25-May-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GAEL|17-Feb-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GAEL|19-Nov-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GAEL|7-Apr-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GALLANTT|12-Nov-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GENESYS|15-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GENUSPOWER|12-Nov-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GENUSPOWER|14-Apr-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GESHIP|6-Jun-2026|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GFLLIMITED|12-Oct-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GHCL|8-Sep-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GICHSGFIN|14-Jan-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GLAXO|17-May-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GLENMARK|28-Aug-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GLOBUSSPR|2-Jan-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GNFC|22-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GODFRYPHLP|13-Apr-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GOKEX|15-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GOKEX|28-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GOLDIAM|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GOLDIAM|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GOODLUCK|14-Apr-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GOODLUCK|26-May-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GRASIM|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GRAUWEIL|7-Apr-2023|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GRAUWEIL|7-Apr-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GRAUWEIL|7-Jun-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GRAVITA|20-Nov-2021|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GRAVITA|25-Sep-2021|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GREAVESCOT|22-Feb-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GREENLAM|24-Jun-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GREENPANEL|17-Jul-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GRSE|25-Apr-2026|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GRWRHITECH|2-May-2026|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GULPOLY|13-Nov-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GULPOLY|14-Aug-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HAL|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HAVELLS|3-Feb-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HBLENGINE|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HCC|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HCC|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HDFCBANK|9-Mar-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HGINFRA|8-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HIMATSEIDE|21-Aug-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HIMATSEIDE|24-Oct-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HINDALCO|24-May-2026|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HITECH|4-Nov-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HPL|6-Jul-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "IDEAFORGE|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "IEX|12-Nov-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "IFCI|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "IFGLEXPOR|26-Aug-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "IFGLEXPOR|4-Nov-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INDHOTEL|26-Mar-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INDIANB|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INDIANB|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INDORAMA|4-Jul-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INFOBEAN|6-May-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INFOBEAN|9-Jul-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INFY|11-Sep-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INFY|15-Feb-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INOXWIND|2-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "INSECTICID|27-Jul-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "IOB|7-Jan-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "IRB|15-May-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "IRB|2-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "IRCON|31-Jan-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ITC|26-Dec-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "J&KBANK|29-Apr-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "J&KBANK|3-Jun-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JAIBALAJI|12-Jul-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JAICORPLTD|7-Oct-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JINDWORLD|18-Oct-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JINDWORLD|31-Oct-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JISLJALEQS|8-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JITFINFRA|11-May-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JKTYRE|20-Jun-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JKTYRE|22-Apr-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JTEKTINDIA|8-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JUBLFOOD|24-May-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "JWL|20-Nov-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KARURVYSYA|26-Dec-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KARURVYSYA|7-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KESORAMIND|30-Nov-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KINGFA|16-Jan-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KIRLFER|1-Apr-2023|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KIRLFER|6-Mar-2023|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KIRLOSENG|15-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KIRLOSENG|2-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KIRLOSENG|20-Feb-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KIRLOSENG|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KIRLPNU|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KIRLPNU|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KITEX|5-May-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KOKUYOCMLN|10-Aug-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KOKUYOCMLN|6-Jul-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KOTAKBANK|11-Dec-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KPIL|10-Jun-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KPIL|5-Mar-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KSB|30-Jul-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "KSCL|29-Mar-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LLOYDSENT|13-Jun-2026|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LLOYDSME|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LTFOODS|4-Nov-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LT|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LT|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LUMAXIND|28-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LUMAXIND|7-Apr-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LUMAXTECH|20-Aug-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LUXIND|11-Jul-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "LUXIND|5-Dec-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "M&M|12-Nov-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "M&M|24-Jun-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MADRASFERT|18-Nov-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MAGADSUGAR|8-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MAHSEAMLES|7-Nov-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MAHSEAMLES|7-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MANGLMCEM|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MARATHON|13-Aug-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MARINE|30-Jun-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MARKSANS|30-May-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MARUTI|24-Nov-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MASTEK|21-Aug-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MASTEK|9-Apr-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MAZDOCK|6-Jun-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MCX|15-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MCX|20-Apr-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MMFL|22-Apr-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MMFL|29-Mar-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MMTC|24-Jul-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MOIL|12-May-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MOREPENLAB|30-Nov-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MSTCLTD|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "MTARTECH|24-Oct-2021|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NAHARCAP|2-Apr-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NAVA|5-Mar-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NAVA|8-Feb-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NAVKARCORP|23-Aug-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NBCC|22-Apr-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NBCC|7-Jul-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NEOGEN|11-Jan-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NETWEB|13-Jun-2026|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NETWEB|13-Jun-2026|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NETWEB|24-May-2026|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NETWORK18|20-Nov-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NEULANDLAB|6-Mar-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NIACL|29-Jan-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NSIL|7-Apr-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NUCLEUS|13-Jan-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NURECA|10-Jul-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "OAL|10-Jul-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "OMINFRAL|24-Jul-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "OPTIEMUS|26-Nov-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ORIENTCEM|5-Oct-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PAISALO|20-Nov-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PANACEABIO|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PARADEEP|12-Jul-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PARADEEP|29-Aug-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PARAS|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PCJEWELLER|10-Aug-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PFOCUS|15-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PNBHOUSING|3-Sep-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PNB|31-Jan-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PNCINFRA|29-Aug-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "POKARNA|4-Jan-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "POLICYBZR|31-Dec-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "POONAWALLA|2-Jan-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "POONAWALLA|5-Dec-2021|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "POWERINDIA|8-Jun-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PRAKASH|22-Jan-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PRAKASH|4-Jan-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PRECAM|5-Jun-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PREMEXPLN|12-Nov-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PREMEXPLN|14-Oct-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PREMEXPLN|29-Mar-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PRESTIGE|29-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PRSMJOHNSN|28-Oct-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PSB|24-Sep-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PURVA|31-Oct-2021|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "QUESS|29-Aug-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "QUICKHEAL|12-Nov-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RAIN|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RAJRATAN|5-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RAMKY|7-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RAYMOND|15-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RAYMOND|28-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RAYMOND|7-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RELINFRA|23-Apr-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RENUKA|19-Dec-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "REPRO|29-Jul-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RHIM|15-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RIIL|6-May-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RIIL|7-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RITES|12-Aug-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RITES|15-Jul-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RITES|26-Feb-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RKFORGE|26-Dec-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ROSSELLIND|30-Jul-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RPSGVENT|4-Jan-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "RUPA|17-May-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SAGCEM|14-Jan-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SANDUMA|19-Apr-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SATIN|7-Nov-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SBCL|22-Mar-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SESHAPAPER|19-Aug-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SFL|6-Mar-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SHAKTIPUMP|18-Sep-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SHAKTIPUMP|19-Aug-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SHOPERSTOP|13-May-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SJVN|24-Dec-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SKIPPER|19-Aug-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SKIPPER|6-Jul-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SKYGOLD|10-Aug-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SKYGOLD|5-Oct-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SMSPHARMA|7-Jan-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SOLARINDS|28-Apr-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SOMANYCERA|8-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SOTL|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SOUTHBANK|12-Aug-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SPANDANA|27-Sep-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SPCENET|3-Feb-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SPECIALITY|7-Oct-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SRHHYPOLTD|27-Aug-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "STEELXIND|26-Mar-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "STERTOOLS|5-Mar-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SUBEXLTD|4-Jan-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SURYAROSNI|1-Apr-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SUVEN|5-May-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SUZLON|1-Jul-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SYRMA|29-Jun-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "SYRMA|5-May-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TARC|9-Jan-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TASTYBITE|18-Nov-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TATACONSUM|9-May-2026|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TCS|27-Oct-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TECHM|11-Jan-2026|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TEXRAIL|13-Jun-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TEXRAIL|31-Jan-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "THEMISMED|7-Jun-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "THOMASCOOK|22-Jan-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TIIL|5-Mar-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TITAGARH|11-Jun-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TITAGARH|7-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TITAN|21-Dec-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TI|20-Aug-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TNPL|27-Sep-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TORNTPHARM|20-Oct-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TORNTPHARM|21-Dec-2025|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TRIDENT|7-Nov-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TRITURBINE|20-Feb-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TRIVENI|7-Oct-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TTML|31-Oct-2021|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "UCOBANK|7-Jul-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "UFLEX|19-Mar-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "UGARSUGAR|14-Apr-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "UNIENTER|15-Sep-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "UNIVCABLES|13-Jun-2026|ENTRY ZONE": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "UNIVCABLES|13-Jun-2026|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "USHAMART|11-Feb-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "UTTAMSUGAR|26-Aug-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "UTTAMSUGAR|3-Jun-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "VBL|16-May-2026|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "VBL|27-Aug-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "VBL|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "VBL|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "VEDL|24-Aug-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "VEDL|9-Mar-2025|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "VIPIND|7-Aug-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "VRLLOG|17-Sep-2022|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WABAG|5-Dec-2021|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WALCHANNAG|27-Jul-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WEBELSOLAR|7-Jan-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WELCORP|9-Nov-2023|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WESTLIFE|7-May-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WOCKPHARMA|10-Feb-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WOCKPHARMA|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WOCKPHARMA|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WSTCSTPAPR|15-Sep-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "WSTCSTPAPR|28-Oct-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "XCHANGING|7-Jan-2024|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ZENSARTECH|10-Dec-2023|STOP LOSS": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ZENTEC|27-Aug-2022|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ZENTEC|5-Jul-2026|ENTRY ZONE": {
+      "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "ZOTA|10-Feb-2024|TARGET HIT": {
+      "baselined": "2026-07-07T18:32:18.669545+00:00"
+    }
+  }
+}

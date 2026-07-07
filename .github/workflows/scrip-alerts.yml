@@ -1,0 +1,47 @@
+name: Scrip trigger alerts
+
+on:
+  schedule:
+    # Every 10 minutes during NSE market hours (09:15-15:30 IST = 03:45-10:00 UTC), Mon-Fri
+    - cron: "45,55 3 * * 1-5"
+    - cron: "*/10 4-9 * * 1-5"
+    - cron: "0 10 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: scrip-alerts
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check sheet for new triggers
+        run: python3 monitor/check_triggers.py --state monitor/state.json --out alerts.md
+
+      - name: Open alert issue
+        if: ${{ hashFiles('alerts.md') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "🔔 Scrip trigger: $(date -u '+%d-%b-%Y %H:%M UTC')" \
+            --body-file alerts.md
+
+      - name: Persist alert state
+        run: |
+          if ! git diff --quiet monitor/state.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add monitor/state.json
+            git commit -m "chore: update scrip alert state [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

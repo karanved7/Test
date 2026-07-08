@@ -1,21 +1,29 @@
 #!/usr/bin/env python3
-"""Watch the NSE calls Google Sheet and detect scrip trigger events.
+"""Watch the calls Google Sheet and detect scrip trigger events.
 
-Fetches the sheet as CSV (it is link-shared, so no credentials are needed),
-evaluates every call row against its levels, and reports NEW events since the
-last run:
+Two markets, two tabs in the same spreadsheet:
 
-  * ENTRY ZONE   - current price <= entry price
-  * STOP LOSS    - current price <= stop loss
-  * TARGET HIT   - current price >= target
+  * india  - "Shortlisted_Stocks" (NSE calls; the spreadsheet's first tab)
+  * us     - "GLOBAL EQUITY_calls" (US stocks / ETFs)
 
-Already-alerted events are remembered in a state file so each (scrip, call
-date, condition) alerts only once. On the very first run (no state file) old
-rows are baselined silently; only calls dated within the last BASELINE_DAYS
-days may alert, so the first run doesn't flood alerts for years-old history.
+The sheet is link-shared, so it can be fetched as CSV with no credentials.
+Each call row is evaluated against its levels:
+
+  * ENTRY ZONE / BUY  - current price <= entry price
+  * STOP LOSS  / SELL - current price <= stop loss
+  * TARGET HIT / SELL - current price >= target
+
+US events are reported with BUY/SELL wording. Already-alerted events are
+remembered in a state file so each (market, scrip, call date, condition)
+alerts only once. On the very first run for a market, rows older than
+BASELINE_DAYS are baselined silently so history doesn't flood alerts.
 
 Usage:
-    python3 check_triggers.py --state state.json --out alerts.md [--print]
+    python3 check_triggers.py --state state.json \
+        [--out alerts.md] [--out-us us_alerts.md] [--print]
+
+--out receives India alerts (markdown), --out-us receives US alerts
+(markdown plus a us_alerts.json next to it for the email webhook).
 """
 
 import argparse
@@ -27,12 +35,24 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 
 SHEET_ID = "1v1d2bcNRR6oqWktjCv6lw61PerOoun1J83h9Jl5hLi8"
-CSV_URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv"
+SHEET_URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/edit"
+BASELINE_DAYS = 14  # on a market's first run, only calls newer than this may alert
 
-# Column indexes in the sheet
-COL_DATE, COL_SCRIP, COL_PRICE, COL_TARGET, COL_ENTRY, COL_SL = 0, 3, 7, 8, 9, 10
-
-BASELINE_DAYS = 14  # on first run, only calls newer than this may alert
+MARKETS = {
+    "india": {
+        "csv": f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv",
+        # DATE, Scrip, Current Price, Target, Entry, SL column indexes
+        "cols": {"date": 0, "scrip": 3, "price": 7, "target": 8, "entry": 9, "sl": 10},
+        "labels": {"entry": "ENTRY ZONE", "sl": "STOP LOSS", "target": "TARGET HIT"},
+    },
+    "us": {
+        "csv": (f"https://docs.google.com/spreadsheets/d/{SHEET_ID}"
+                "/gviz/tq?tqx=out:csv&sheet=GLOBAL%20EQUITY_calls"),
+        "cols": {"date": 0, "scrip": 1, "price": 9, "target": 10, "entry": 11, "sl": 12},
+        "labels": {"entry": "BUY (entry zone)", "sl": "SELL (stop loss)",
+                   "target": "SELL (target hit)"},
+    },
+}
 
 
 def to_float(cell):
@@ -46,46 +66,52 @@ def to_float(cell):
 
 
 def parse_date(cell):
-    try:
-        return datetime.strptime(cell.strip(), "%d-%b-%Y").replace(tzinfo=timezone.utc)
-    except ValueError:
-        return None
+    for fmt in ("%d-%b-%Y", "%d-%b-%y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(cell.strip(), fmt).replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+    return None
 
 
-def fetch_rows():
-    with urllib.request.urlopen(CSV_URL, timeout=60) as resp:
+def fetch_rows(url):
+    with urllib.request.urlopen(url, timeout=60) as resp:
         text = resp.read().decode("utf-8", errors="replace")
     return list(csv.reader(io.StringIO(text)))
 
 
-def evaluate(rows):
-    """Return a list of currently-true trigger events across all call rows."""
+def evaluate(market):
+    """Return currently-true trigger events for one market's tab."""
+    cfg = MARKETS[market]
+    c = cfg["cols"]
+    labels = cfg["labels"]
     events = []
-    for row in rows:
-        if len(row) <= COL_SL:
+    for row in fetch_rows(cfg["csv"]):
+        if len(row) <= max(c.values()):
             continue
-        scrip = row[COL_SCRIP].strip()
-        price = to_float(row[COL_PRICE])
-        if not scrip or scrip == "Scrip" or price is None:
+        scrip = row[c["scrip"]].strip()
+        price = to_float(row[c["price"]])
+        if not scrip or scrip.lower() == "scrip" or price is None:
             continue
-        date = row[COL_DATE].strip()
-        target = to_float(row[COL_TARGET])
-        entry = to_float(row[COL_ENTRY])
-        sl = to_float(row[COL_SL])
+        date = row[c["date"]].strip()
+        target = to_float(row[c["target"]])
+        entry = to_float(row[c["entry"]])
+        sl = to_float(row[c["sl"]])
 
         checks = [
-            ("STOP LOSS", sl is not None and price <= sl,
+            (labels["sl"], sl is not None and price <= sl,
              f"price {price:g} <= stop loss {sl:g}" if sl is not None else ""),
-            ("ENTRY ZONE", entry is not None and price <= entry,
+            (labels["entry"], entry is not None and price <= entry,
              f"price {price:g} <= entry {entry:g}" if entry is not None else ""),
-            ("TARGET HIT", target is not None and price >= target,
+            (labels["target"], target is not None and price >= target,
              f"price {price:g} >= target {target:g}" if target is not None else ""),
         ]
         for cond, hit, detail in checks:
             if hit:
                 events.append({
-                    "key": f"{scrip}|{date}|{cond}",
-                    "scrip": scrip,
+                    "key": f"{market}|{scrip.upper()}|{date}|{cond}",
+                    "market": market,
+                    "scrip": scrip.upper(),
                     "call_date": date,
                     "condition": cond,
                     "detail": detail,
@@ -93,57 +119,85 @@ def evaluate(rows):
     return events
 
 
+def write_markdown(path, title, alerts):
+    lines = [f"## {title}", "",
+             "| Scrip | Signal | Detail | Call date |", "|---|---|---|---|"]
+    lines += [f"| **{e['scrip']}** | {e['condition']} | {e['detail']} | {e['call_date']} |"
+              for e in alerts]
+    lines += ["", f"[Open the sheet]({SHEET_URL})"]
+    with open(path, "w") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--state", required=True, help="path to state JSON file")
-    ap.add_argument("--out", help="write new alerts as markdown to this file")
-    ap.add_argument("--print", dest="do_print", action="store_true",
-                    help="print all currently-true events (ignores state)")
+    ap.add_argument("--state", required=True)
+    ap.add_argument("--out", help="markdown output for new India alerts")
+    ap.add_argument("--out-us", help="markdown output for new US alerts "
+                                     "(also writes <same path>.json)")
+    ap.add_argument("--print", dest="do_print", action="store_true")
     args = ap.parse_args()
 
-    rows = fetch_rows()
-    events = evaluate(rows)
     now = datetime.now(timezone.utc)
-
-    if args.do_print:
-        for e in events:
-            print(f"{e['condition']:>10}  {e['scrip']:<12} (call {e['call_date']}): {e['detail']}")
-        print(f"\n{len(events)} condition(s) currently true.")
+    cutoff = now - timedelta(days=BASELINE_DAYS)
 
     try:
         with open(args.state) as f:
             state = json.load(f)
-        first_run = False
     except FileNotFoundError:
         state = {"alerted": {}}
-        first_run = True
+    state.setdefault("seen_markets", [])
 
-    cutoff = now - timedelta(days=BASELINE_DAYS)
-    new_alerts = []
-    for e in events:
-        if e["key"] in state["alerted"]:
-            continue
-        call_dt = parse_date(e["call_date"])
-        if first_run and (call_dt is None or call_dt < cutoff):
-            state["alerted"][e["key"]] = {"baselined": now.isoformat()}
-            continue
-        state["alerted"][e["key"]] = {"alerted": now.isoformat()}
-        new_alerts.append(e)
+    new_by_market = {"india": [], "us": []}
+    totals = {}
+    for market in MARKETS:
+        events = evaluate(market)
+        totals[market] = len(events)
+        first_run = market not in state["seen_markets"]
+        # india predates market prefixes in state keys; honour old entries
+        legacy = market == "india"
+        for e in events:
+            old_key = e["key"].split("|", 1)[1] if legacy else None
+            if e["key"] in state["alerted"] or (old_key and old_key in state["alerted"]):
+                continue
+            call_dt = parse_date(e["call_date"])
+            if first_run and (call_dt is None or call_dt < cutoff):
+                state["alerted"][e["key"]] = {"baselined": now.isoformat()}
+                continue
+            state["alerted"][e["key"]] = {"alerted": now.isoformat()}
+            new_by_market[market].append(e)
+        if first_run:
+            state["seen_markets"].append(market)
+        if args.do_print:
+            for e in events:
+                print(f"[{market:>5}] {e['condition']:<18} {e['scrip']:<12}"
+                      f" (call {e['call_date']}): {e['detail']}")
 
     with open(args.state, "w") as f:
         json.dump(state, f, indent=2, sort_keys=True)
 
-    if new_alerts and args.out:
-        lines = [f"## Scrip triggers detected at {now.strftime('%Y-%m-%d %H:%M UTC')}", ""]
-        lines += ["| Scrip | Condition | Detail | Call date |", "|---|---|---|---|"]
-        lines += [f"| **{e['scrip']}** | {e['condition']} | {e['detail']} | {e['call_date']} |"
-                  for e in new_alerts]
-        lines += ["", f"[Open the sheet](https://docs.google.com/spreadsheets/d/{SHEET_ID}/edit)"]
-        with open(args.out, "w") as f:
-            f.write("\n".join(lines) + "\n")
+    stamp = now.strftime("%Y-%m-%d %H:%M UTC")
+    if new_by_market["india"] and args.out:
+        write_markdown(args.out, f"India scrip triggers at {stamp}",
+                       new_by_market["india"])
+    if new_by_market["us"] and args.out_us:
+        write_markdown(args.out_us, f"US stock signals at {stamp}",
+                       new_by_market["us"])
+        with open(args.out_us + ".json", "w") as f:
+            json.dump({
+                "subject": "US Stock Alert: " + ", ".join(
+                    f"{e['scrip']} {e['condition'].split(' ')[0]}"
+                    for e in new_by_market["us"][:6]),
+                "text": "\n".join(
+                    f"{e['condition']}: {e['scrip']} — {e['detail']}"
+                    f" (call dated {e['call_date']})"
+                    for e in new_by_market["us"]
+                ) + f"\n\nSheet: {SHEET_URL}",
+                "alerts": new_by_market["us"],
+            }, f, indent=2)
 
-    print(f"{len(new_alerts)} new alert(s); {len(events)} condition(s) true overall."
-          + (" (first run: older rows baselined)" if first_run else ""))
+    print(f"India: {len(new_by_market['india'])} new / {totals['india']} true. "
+          f"US: {len(new_by_market['us'])} new / {totals['us']} true.")
     return 0
 
 

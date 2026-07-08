@@ -2,10 +2,14 @@ name: Scrip trigger alerts
 
 on:
   schedule:
-    # Every 10 minutes during NSE market hours (09:15-15:30 IST = 03:45-10:00 UTC), Mon-Fri
+    # NSE market hours (09:15-15:30 IST = 03:45-10:00 UTC), Mon-Fri
     - cron: "45,55 3 * * 1-5"
     - cron: "*/10 4-9 * * 1-5"
     - cron: "0 10 * * 1-5"
+    # US market hours (09:30-16:00 ET ~= 13:30-20:00 UTC), Mon-Fri
+    - cron: "30,40,50 13 * * 1-5"
+    - cron: "*/10 14-19 * * 1-5"
+    - cron: "0 20 * * 1-5"
   workflow_dispatch:
 
 permissions:
@@ -23,17 +27,43 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Check sheet for new triggers
-        run: python3 monitor/check_triggers.py --state monitor/state.json --out alerts.md
+        run: |
+          python3 monitor/check_triggers.py \
+            --state monitor/state.json \
+            --out alerts.md \
+            --out-us us_alerts.md
 
-      - name: Open alert issue
+      - name: Open India alert issue
         if: ${{ hashFiles('alerts.md') != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh issue create \
             --repo "$GITHUB_REPOSITORY" \
-            --title "🔔 Scrip trigger: $(date -u '+%d-%b-%Y %H:%M UTC')" \
+            --title "🔔 India scrip trigger: $(date -u '+%d-%b-%Y %H:%M UTC')" \
             --body-file alerts.md
+
+      - name: Open US alert issue
+        if: ${{ hashFiles('us_alerts.md') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "🇺🇸 US stock signal: $(date -u '+%d-%b-%Y %H:%M UTC')" \
+            --body-file us_alerts.md
+
+      - name: Email US alerts (via Make webhook)
+        if: ${{ hashFiles('us_alerts.md.json') != '' }}
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+        run: |
+          if [ -n "$MAKE_WEBHOOK_URL" ]; then
+            curl -sS -X POST -H "Content-Type: application/json" \
+              --data @us_alerts.md.json "$MAKE_WEBHOOK_URL" || true
+          else
+            echo "MAKE_WEBHOOK_URL secret not set; skipping email."
+          fi
 
       - name: Persist alert state
         run: |

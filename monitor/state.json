@@ -102,6 +102,9 @@
     "AVTNPL|27-Nov-2022|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
     },
+    "AXISBANK|6-Jun-2026|ENTRY ZONE": {
+      "alerted": "2026-07-08T09:07:30.023025+00:00"
+    },
     "BAJAJ-AUTO|11-Mar-2023|TARGET HIT": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
     },
@@ -225,6 +228,9 @@
     "EASEMYTRIP|7-Aug-2022|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
     },
+    "EICHERMOT|13-Jun-2026|ENTRY ZONE": {
+      "alerted": "2026-07-08T09:07:30.023025+00:00"
+    },
     "EIHAHOTELS|20-Jun-2025|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
     },
@@ -248,6 +254,9 @@
     },
     "FILATEX|17-Jul-2021|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "FLUOROCHEM|13-Jun-2026|ENTRY ZONE": {
+      "alerted": "2026-07-08T09:07:30.023025+00:00"
     },
     "FORTIS|25-May-2024|TARGET HIT": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
@@ -374,6 +383,9 @@
     },
     "HCC|5-Jul-2026|STOP LOSS": {
       "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "HDFCAMC|27-Jun-2026|ENTRY ZONE": {
+      "alerted": "2026-07-08T09:07:30.023025+00:00"
     },
     "HDFCBANK|9-Mar-2025|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
@@ -603,6 +615,9 @@
     "MAHSEAMLES|7-Oct-2022|TARGET HIT": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
     },
+    "MANGLMCEM|19-Apr-2026|ENTRY ZONE": {
+      "alerted": "2026-07-08T09:07:30.023025+00:00"
+    },
     "MANGLMCEM|5-Jul-2026|ENTRY ZONE": {
       "alerted": "2026-07-07T18:32:18.669545+00:00"
     },
@@ -689,6 +704,9 @@
     },
     "NEULANDLAB|6-Mar-2023|TARGET HIT": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "NFL|29-Apr-2023|STOP LOSS": {
+      "alerted": "2026-07-08T09:07:30.023025+00:00"
     },
     "NIACL|29-Jan-2024|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
@@ -785,6 +803,9 @@
     },
     "PRSMJOHNSN|28-Oct-2023|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "PRSMJOHNSN|3-Jun-2023|STOP LOSS": {
+      "alerted": "2026-07-08T09:07:30.023025+00:00"
     },
     "PSB|24-Sep-2023|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
@@ -977,6 +998,9 @@
     },
     "TIIL|5-Mar-2023|TARGET HIT": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "TIPSMUSIC|5-Oct-2024|STOP LOSS": {
+      "alerted": "2026-07-08T09:07:30.023025+00:00"
     },
     "TITAGARH|11-Jun-2022|TARGET HIT": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"

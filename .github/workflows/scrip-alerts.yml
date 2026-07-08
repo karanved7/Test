@@ -53,17 +53,26 @@ jobs:
             --title "🇺🇸 US stock signal: $(date -u '+%d-%b-%Y %H:%M UTC')" \
             --body-file us_alerts.md
 
-      - name: Email US alerts (via Make webhook)
+      - name: Prepare US alert email
+        id: email_prep
         if: ${{ hashFiles('us_alerts.md.json') != '' }}
-        env:
-          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
         run: |
-          if [ -n "$MAKE_WEBHOOK_URL" ]; then
-            curl -sS -X POST -H "Content-Type: application/json" \
-              --data @us_alerts.md.json "$MAKE_WEBHOOK_URL" || true
-          else
-            echo "MAKE_WEBHOOK_URL secret not set; skipping email."
-          fi
+          echo "subject=$(jq -r .subject us_alerts.md.json)" >> "$GITHUB_OUTPUT"
+          jq -r .text us_alerts.md.json > email_body.txt
+
+      - name: Email US alerts (Karan + Radhika)
+        if: ${{ hashFiles('us_alerts.md.json') != '' && secrets.GMAIL_APP_PASSWORD != '' }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: karanved7@gmail.com
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          from: Stock Alerts <karanved7@gmail.com>
+          to: karanved7@gmail.com,radhikakhandelwal1993@gmail.com
+          subject: ${{ steps.email_prep.outputs.subject }}
+          body: file://email_body.txt
 
       - name: Persist alert state
         run: |

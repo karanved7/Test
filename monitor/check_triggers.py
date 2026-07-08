@@ -98,10 +98,12 @@ def evaluate(market):
         entry = to_float(row[c["entry"]])
         sl = to_float(row[c["sl"]])
 
+        sl_hit = sl is not None and price <= sl
         checks = [
-            (labels["sl"], sl is not None and price <= sl,
+            (labels["sl"], sl_hit,
              f"price {price:g} <= stop loss {sl:g}" if sl is not None else ""),
-            (labels["entry"], entry is not None and price <= entry,
+            # a broken stop loss silences the "in entry zone" signal for the row
+            (labels["entry"], not sl_hit and entry is not None and price <= entry,
              f"price {price:g} <= entry {entry:g}" if entry is not None else ""),
             (labels["target"], target is not None and price >= target,
              f"price {price:g} >= target {target:g}" if target is not None else ""),
@@ -183,11 +185,20 @@ def main():
     if new_by_market["us"] and args.out_us:
         write_markdown(args.out_us, f"US stock signals at {stamp}",
                        new_by_market["us"])
+        sells = sorted({e["scrip"] for e in new_by_market["us"]
+                        if e["condition"].startswith("SELL")})
+        buys = sorted({e["scrip"] for e in new_by_market["us"]
+                       if e["condition"].startswith("BUY")})
+        subject_parts = []
+        if sells:
+            subject_parts.append("SELL " + ", ".join(sells[:5])
+                                 + (f" +{len(sells) - 5} more" if len(sells) > 5 else ""))
+        if buys:
+            subject_parts.append("BUY " + ", ".join(buys[:5])
+                                 + (f" +{len(buys) - 5} more" if len(buys) > 5 else ""))
         with open(args.out_us + ".json", "w") as f:
             json.dump({
-                "subject": "US Stock Alert: " + ", ".join(
-                    f"{e['scrip']} {e['condition'].split(' ')[0]}"
-                    for e in new_by_market["us"][:6]),
+                "subject": "US Stock Alert — " + " | ".join(subject_parts),
                 "text": "\n".join(
                     f"{e['condition']}: {e['scrip']} — {e['detail']}"
                     f" (call dated {e['call_date']})"

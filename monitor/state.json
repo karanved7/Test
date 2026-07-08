@@ -114,6 +114,9 @@
     "BBOX|5-Jul-2026|ENTRY ZONE": {
       "alerted": "2026-07-07T18:32:18.669545+00:00"
     },
+    "BBOX|5-Jul-2026|STOP LOSS": {
+      "alerted": "2026-07-08T06:16:31.078951+00:00"
+    },
     "BCLIND|20-Feb-2023|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
     },
@@ -308,6 +311,9 @@
     },
     "GOLDIAM|5-Jul-2026|STOP LOSS": {
       "alerted": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "GOLDIAM|6-Jun-2026|ENTRY ZONE": {
+      "alerted": "2026-07-08T06:16:31.078951+00:00"
     },
     "GOODLUCK|14-Apr-2023|TARGET HIT": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
@@ -698,6 +704,9 @@
     },
     "OAL|10-Jul-2021|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "OIL|8-Feb-2023|TARGET HIT": {
+      "alerted": "2026-07-08T06:16:31.078951+00:00"
     },
     "OMINFRAL|24-Jul-2024|STOP LOSS": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"

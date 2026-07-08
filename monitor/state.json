@@ -1133,6 +1133,37 @@
     },
     "ZOTA|10-Feb-2024|TARGET HIT": {
       "baselined": "2026-07-07T18:32:18.669545+00:00"
+    },
+    "us|AAPL|27-Jun-2026|BUY (entry zone)": {
+      "alerted": "2026-07-08T11:22:07.575530+00:00"
+    },
+    "us|ACWI|27-Jun-2026|BUY (entry zone)": {
+      "alerted": "2026-07-08T11:22:07.575530+00:00"
+    },
+    "us|ASHR|27-Jun-2026|BUY (entry zone)": {
+      "alerted": "2026-07-08T11:22:07.575530+00:00"
+    },
+    "us|ASHR|27-Jun-2026|SELL (stop loss)": {
+      "alerted": "2026-07-08T11:22:07.575530+00:00"
+    },
+    "us|DDOG|27-Jun-2026|BUY (entry zone)": {
+      "alerted": "2026-07-08T11:22:07.575530+00:00"
+    },
+    "us|IEMG|27-Jun-2026|BUY (entry zone)": {
+      "alerted": "2026-07-08T11:22:07.575530+00:00"
+    },
+    "us|IEMG|27-Jun-2026|SELL (stop loss)": {
+      "alerted": "2026-07-08T11:22:07.575530+00:00"
+    },
+    "us|VT|27-Jun-2026|BUY (entry zone)": {
+      "alerted": "2026-07-08T11:22:07.575530+00:00"
+    },
+    "us|XLE|27-Jun-2026|BUY (entry zone)": {
+      "alerted": "2026-07-08T11:22:07.575530+00:00"
     }
-  }
+  },
+  "seen_markets": [
+    "india",
+    "us"
+  ]
 }
